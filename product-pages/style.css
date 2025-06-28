@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   color: #111;
 }
@@ -41,7 +42,6 @@ a {
   color: #333;
   font-weight: 500;
   font-size: 18px;
-  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .nav-icon {
