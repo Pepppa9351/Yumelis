@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', OnLoad);
 // This function will load the products from the JSON file and display them
 function OnLoad() {
   // Get the products.json file from the data folder
-  fetch('../data/akce-products.json')
+  fetch('../data/parfemy-products.json')
     .then(handleResponse)        // Handle the response from the server
     .then(displayProducts)       // Use the product data to create elements
     .catch(handleError);         // If something goes wrong, show the error
