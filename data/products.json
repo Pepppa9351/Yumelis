@@ -3,42 +3,42 @@
     "id": "althair",
     "name": "Parfums De Marly – Althair",
     "price": 5390,
-    "image": "../images/althair.png",
+    "image": "/images/althair.png",
     "category": "parfemy"
   },
   {
     "id": "set-na-rande",
     "name": "Pánský set vzorků na rande",
     "price": 400,
-    "image": "../images/set-na-rande.png",
+    "image": "/images/set-na-rande.png",
     "category": "darkove-sety"
   },
   {
     "id": "dark-vanilla",
     "name": "Montale – Dark Vanilla",
     "price": 2190,
-    "image": "../images/dark-vanilla.png",
+    "image": "/images/dark-vanilla.png",
     "category": "parfemy"
   },
   {
     "id": "layton",
     "name": "Parfums De Marly – Layton",
     "price": 2190,
-    "image": "../images/layton.png",
+    "image": "/images/layton.png",
     "category": "parfemy"
   },
   {
     "id": "cestovni-lahvicka",
     "name": "Cestovní lahvička na parfémy",
     "price": 90,
-    "image": "../images/doplnky.png",
+    "image": "/images/doplnky.png",
     "category": "doplnky"
   },
   {
     "id": "layton-vzorek",
     "name": "Vzorek 5 ml: Parfums De Marly – Layton",
     "price": 190,
-    "image": "../images/sample.png",
+    "image": "/images/sample.png",
     "category": "vzorky"
   }
 
