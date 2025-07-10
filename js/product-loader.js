@@ -25,11 +25,27 @@ function displayProducts(products) {
     productLink.href = `../product.html?id=${product.id}`;
     productLink.className = "product-card";
 
-    productLink.innerHTML = `
+    // If the product name has a colon then split it into two rows
+    if (product.name.includes(":")) {
+      const parts = product.name.split(":");
+      const beforeColon = parts[0].trim();
+      const afterColon = parts[1].trim(); 
+
+      productLink.innerHTML = `
       <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <p class="product-name">${product.name}</p>
+      <p class="product-note">${beforeColon}</p>
+      <p class="product-name">${afterColon}</p>
       <p class="product-price">${product.price} Kč</p>
     `;
+    } 
+
+    else {
+      productLink.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image" />
+        <p class="product-name">${product.name}</p>
+        <p class="product-price">${product.price} Kč</p>
+      `;
+    }
 
     productList.appendChild(productLink);
   }
