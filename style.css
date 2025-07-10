@@ -154,8 +154,7 @@ header {
   align-items: center;
   overflow: hidden;
   padding: 3.47%;
-  max-width: 30%;
-  min-width: 20%;
+  width: 13vw;
 }
 
 .product-image {
