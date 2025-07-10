@@ -23,46 +23,46 @@ a {
    2. Header
 ========================= */
 header {
-  padding-top: 5.56%; /* 80px */
+  padding-top: 80px;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4.17%; /* 60px */
+  height: 60px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.39%; /* 20px */
+  padding: 20px;
   border-bottom: 1px solid #eee;
   z-index: 1000;
 }
 
 .nav-links {
-  margin-top: 0.35%;
+  margin-top: 5px;
   list-style: none;
   display: flex;
-  gap: 5.56%; /* 80px */
+  gap: 80px;
 }
 
 .nav-links a {
   color: #333;
   font-weight: 500;
-  font-size: 1.25vw;
+  font-size: 18px;
 }
 
 .icons {
-  font-size: 1.74vw;
+  font-size: 25px;
   display: flex;
-  gap: 1.74vw;
+  gap: 25px;
   align-items: center;
 }
 
 .nav-icon {
-  margin-top: -0.35%;
-  height: 1.74vw;
+  margin-top: -5px;
+  height: 25px;
   width: auto;
 }
 
@@ -73,19 +73,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.78% 0;
+  margin: 40px 0;
 }
 
 .logo {
-  font-size: 10.42vw;
-  letter-spacing: 0.35vw;
+  font-size: 150px;
+  letter-spacing: 5px;
   font-family: 'Italiana', serif;
 }
 
 .parfum-container {
   background-color: #f0f0f0;
   width: 100%;
-  height: 55.56vw; /* 800px */
+  height: 800px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -94,26 +94,26 @@ header {
 }
 
 .parfum-image {
-  max-width: 90.28vw; /* 1300px */
-  max-height: 90.28vw;
-  transform: translateY(20.83vw);
+  max-width: 1300px;
+  max-height: 1300px;
+  transform: translateY(300px);
   transition: transform 0.5s ease;
   position: relative;
   bottom: 0;
 }
 
 .parfum-container:hover .parfum-image {
-  transform: translateY(14.58vw);
+  transform: translateY(210px);
 }
 
 .letni-slevy {
   color: #333;
   font-weight: lighter;
-  font-size: 1.74vw;
-  margin-left: -6.94%;
+  font-size: 25px;
+  margin-left: -100px;
   position: relative;
-  right: 12.5%;
-  bottom: 3.47%;
+  right: 180px;
+  bottom: 50px;
 }
 
 .sleva-procenta {
@@ -124,49 +124,46 @@ header {
    4. Best sellers
 ========================= */
 .best-sellers-section {
-  padding: 2.78% 1.39%;
+  padding: 40px 20px;
 }
 
 .best-sellers-heading {
   text-align: center;
-  margin: 2.08% 0;
+  margin: 30px 0;
 }
 
 .best-sellers-heading h2 {
-  font-size: 2.78vw;
+  font-size: 40px;
   font-weight: normal;
-  letter-spacing: 0.21vw;
+  letter-spacing: 3px;
 }
 
 .product-row {
   display: flex;
-  gap: 1.39%;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 20px;
 }
 
 .product-card {
-  flex: 1 1 250px;
+  flex: 1 1 0;
   background-color: #f0f0f0;
-  border-radius: 1.11vw;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding: 3.47%;
-  max-width: 30%;
-  min-width: 13vw;
+  height: fit-content;
+  width: fit-content;
+  padding: 50px;
 }
 
 .product-image {
-  max-width: 34.72vw;
-  max-height: 34.72vw;
+  max-width: 500px;
+  max-height: 500px;
   object-fit: contain;
-  border-radius: 1.11vw 1.11vw 0 0;
+  border-radius: 16px 16px 0 0;
   transition: transform 0.5s ease;
   display: block;
   height: auto;
-  width: 100%;
 }
 
 .product-card:hover .product-image {
@@ -180,13 +177,13 @@ header {
 
 .product-name {
   font-weight: bold;
-  font-size: 1.39vw;
-  margin-top: 1.39%;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .product-price {
-  font-size: 1.25vw;
-  margin-top: 0.35%;
+  font-size: 18px;
+  margin-top: 5px;
   color: #333;
 }
 
@@ -194,28 +191,26 @@ header {
    5. Kategorie
 ========================= */
 .kategorie-section {
-  padding: 4.17%;
-  margin-bottom: 10.42%;
+  padding: 60px;
+  margin-bottom: 150px;
 }
 
 .kategorie-heading {
   text-align: center;
-  margin-bottom: 2.78%;
+  margin-bottom: 40px;
 }
 
 .kategorie-heading h2 {
-  font-size: 2.78vw;
+  font-size: 40px;
   font-weight: normal;
-  letter-spacing: 0.21vw;
+  letter-spacing: 3px;
 }
 
 .kategorie-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 6.94%;
-  gap: 2.08%;
-  justify-content: center;
+  padding: 0 100px;
 }
 
 .kategorie-card {
@@ -226,24 +221,22 @@ header {
 
 .kategorie-image-box {
   background-color: #f0f0f0;
-  border-radius: 1.11vw;
+  border-radius: 16px;
   overflow: hidden;
-  padding: 1.39%;
-  width: 17.36%;
-  height: 17.36%;
-  min-width: 250px;
-  min-height: 250px;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
 }
 
 .kategorie-image {
-  height: 13.89%;
+  height: 200px;
   width: auto;
 }
 
 .kategorie-name {
   font-weight: bold;
-  font-size: 1.53vw;
-  margin-top: 1.39%;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
 /* =========================
@@ -251,7 +244,7 @@ header {
 ========================= */
 .site-footer {
   background-color: #202020;
-  padding: 0.69% 0 2.08%;
+  padding: 10px 0 30px;
   text-align: center;
 }
 
@@ -265,38 +258,17 @@ header {
 ========================= */
 .payment-box {
   background-color: #fff;
-  padding: 2.78%;
-  margin-bottom: 25%;
+  padding: 40px;
+  margin-bottom: 360px;
   width: 100%;
   height: fit-content;
 }
 
 .payment-icons {
-  width: 5.56%;
-  height: 5.56%;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
-  gap: 5.56%;
+  gap: 80px;
   margin-left: 50%;
-}
-
-/* =========================
-   8. Responsive Tweaks
-========================= */
-@media (max-width: 768px) {
-  .product-card, .kategorie-image-box {
-    max-width: 90%;
-  }
-  .product-image {
-    max-width: 100%;
-  }
-  .logo {
-    font-size: 14vw;
-  }
-  .nav-links {
-    gap: 4vw;
-  }
-  .nav-links a {
-    font-size: 4vw;
-  }
 }
