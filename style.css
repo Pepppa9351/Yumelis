@@ -1,3 +1,6 @@
+/* =========================
+   1. General
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +9,8 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   color: #111;
-}
-
-header {
-  padding-top: 80px;
 }
 
 a {
@@ -20,44 +18,26 @@ a {
   color: inherit;
 }
 
-h2
-{
-  font-family: 'Montserrat', sans-serif;
+
+/* =========================
+   2. Header
+========================= */
+header {
+  padding-top: 80px;
 }
 
 .navbar {
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  height: 60px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
   border-bottom: 1px solid #eee;
   z-index: 1000;
-  height: 60px;
-}
-
-.nav-icon {
-  margin-top: -5px;
-  height: 25px;
-  width: auto;
-}
-
-
-.logo {
-  font-size: 150px;
-  letter-spacing: 5px;
-  font-family: 'Italiana', serif;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .nav-links {
@@ -68,7 +48,6 @@ h2
 }
 
 .nav-links a {
-  text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 18px;
@@ -81,8 +60,30 @@ h2
   align-items: center;
 }
 
+.nav-icon {
+  margin-top: -5px;
+  height: 25px;
+  width: auto;
+}
+
+/* =========================
+   3. Logo
+========================= */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.logo {
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-family: 'Italiana', serif;
+}
+
 .parfum-container {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   width: 100%;
   height: 800px;
   overflow: hidden;
@@ -93,12 +94,12 @@ h2
 }
 
 .parfum-image {
-    max-width: 1300px;
-    max-height: 1300px;
-    position: relative;
-    bottom: 0;
-    transform: translateY(300px);
-    transition: transform 0.5s ease;
+  max-width: 1300px;
+  max-height: 1300px;
+  transform: translateY(300px);
+  transition: transform 0.5s ease;
+  position: relative;
+  bottom: 0;
 }
 
 .parfum-container:hover .parfum-image {
@@ -109,7 +110,6 @@ h2
   color: #333;
   font-weight: lighter;
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
   margin-left: -100px;
   position: relative;
   right: 180px;
@@ -120,17 +120,16 @@ h2
   font-weight: bold;
 }
 
-
-
-
+/* =========================
+   4. Best sellers
+========================= */
 .best-sellers-section {
   padding: 40px 20px;
 }
 
 .best-sellers-heading {
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .best-sellers-heading h2 {
@@ -158,38 +157,39 @@ h2
 }
 
 .product-image {
-  height: auto;
-  display: block;
-  object-fit: contain;
-  border-radius: 16px 16px 0 0;
   max-width: 500px;
   max-height: 500px;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
   transition: transform 0.5s ease;
+  display: block;
+  height: auto;
 }
 
 .product-card:hover .product-image {
-   transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.product-name,
+.product-price {
+  text-align: center;
 }
 
 .product-name {
   font-weight: bold;
   font-size: 20px;
   margin-top: 20px;
-  text-align: center;
 }
 
 .product-price {
-  font-weight: normal;
   font-size: 18px;
   margin-top: 5px;
   color: #333;
-  text-align: center;
 }
 
-
-
-
-
+/* =========================
+   5. Kategorie
+========================= */
 .kategorie-section {
   padding: 60px;
   margin-bottom: 150px;
@@ -210,8 +210,7 @@ h2
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0 100px;
 }
 
 .kategorie-card {
@@ -232,7 +231,6 @@ h2
 .kategorie-image {
   height: 200px;
   width: auto;
-
 }
 
 .kategorie-name {
@@ -241,22 +239,23 @@ h2
   margin-top: 20px;
 }
 
-
-
-
-
-
+/* =========================
+   6. Footer
+========================= */
 .site-footer {
   background-color: #202020;
-  padding: 10px 0px 30px;
+  padding: 10px 0 30px;
   text-align: center;
 }
 
 .footer-content {
+  color: #fff;
   margin: 0 auto;
-  color: #fff
 }
 
+/* =========================
+   7. Payment section
+========================= */
 .payment-box {
   background-color: #fff;
   padding: 40px;
@@ -271,6 +270,5 @@ h2
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-left: 50%;  
+  margin-left: 50%;
 }
-
