@@ -294,14 +294,9 @@ header {
     font-size: 14vw;
   }
   .nav-links {
-    gap: 20px; /* reduce space between links */
+    gap: 4vw;
   }
   .nav-links a {
-    font-size: 14px;
-    padding: 5px;
-  }
-  .icons {
-    font-size: 18px;  /* reduce icon size too if needed */
-    gap: 15px;
+    font-size: 2vw;
   }
 }
