@@ -11,7 +11,6 @@ function OnLoad() {
       const product = products.find(p => p.id === productId);
       if (product) {
         displayProduct(product);
-        AddToCart(product);
       } else {
         throw new Error("Product not found.");
       }
