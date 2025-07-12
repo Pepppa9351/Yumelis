@@ -30,7 +30,7 @@ function displayProduct(product) {
 function createButton(product) {
   const addToCartBtn = document.getElementById('add-to-cart-btn');
   if (addToCartBtn) {
-    addToCartBtn.addEventListener('click', () => {
+    addToCartBtn.onclick = () => {
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
       const existingItem = cart.find(item => item.id === product.id);
@@ -42,7 +42,7 @@ function createButton(product) {
 
       localStorage.setItem('cart', JSON.stringify(cart));
       alert("Product added to cart!");
-    });
+    };
   }
 }
 
