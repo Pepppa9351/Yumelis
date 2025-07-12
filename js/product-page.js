@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', OnLoad);
 
+// Called after the page with a reference to this scripts loads
 function OnLoad() {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get('id');
@@ -18,15 +19,16 @@ function OnLoad() {
     .catch(handleError);
 }
 
+// Displays the products image, name, price and the add to cart nbutton
 function displayProduct(product) {
   document.getElementById('product-image').src = product.image;
   document.getElementById('product-name').textContent = product.name;
   document.getElementById('product-price').textContent = product.price + " Kč";
-
-  AddToCart(product);
+  createButton(product);
 }
 
-function AddToCart(product) {
+// Creates a button on the page with a listener for clicks
+function createButton(product) {
   const addToCartBtn = document.getElementById('add-to-cart-btn');
   if (addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
@@ -45,6 +47,7 @@ function AddToCart(product) {
   }
 }
 
+// Error handling
 function handleError(error) {
   console.error("Error loading products:", error);
 }
