@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <a href ="index.html"><img src=images/home.png alt="Home" class="nav-icon" /> </a>
+        <li><a href="product-pages/darkove-sety.html">DÁRKOVÉ SETY</a></li>
+        <li><a href="product-pages/parfemy.html">PARFÉMY</a></li>
+        <li><a href="product-pages/vzorky.html">VZORKY A MINIATURY</a></li>
+        <li><a href="product-pages/doplnky.html">DOPLŇKY</a></li>
+       </ul>
+      <div class="icons">
+        <img src=images/search.png alt="Search" class="nav-icon" />
+         <a href ="cart.html"><img src=images/shopping-cart.png alt="Shopping cart" class="nav-icon" /></a>
+        <img src=images/user-icon.png alt="User icon" class="nav-icon" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your cart</h1>
+    <div id="cart-items"></div>
+    <div id="cart-total">
+      <h2>Total: <span id="total-price">0 Kč</span></h2>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
