@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', OnLoad);
 
-// Called after the page with a reference to this scripts loads
 function OnLoad() {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get('id');
@@ -18,35 +17,38 @@ function OnLoad() {
     .catch(handleError);
 }
 
-// Displays the products image, name, price and the add to cart nbutton
 function displayProduct(product) {
   document.getElementById('product-image').src = product.image;
+
+  // If brand exists and is not empty, show it
+  if (product.brand && product.brand.trim() !== "") {
+    document.getElementById('product-brand').textContent = product.brand;
+  } else {
+    document.getElementById('product-brand').style.display = "none";
+  }
+
   document.getElementById('product-name').textContent = product.name;
   document.getElementById('product-price').textContent = product.price + " Kč";
   createButton(product);
 }
 
-// Creates a button on the page with a listener for clicks
 function createButton(product) {
   const addToCartBtn = document.getElementById('add-to-cart-btn');
   if (addToCartBtn) {
     addToCartBtn.onclick = () => {
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
       const existingItem = cart.find(item => item.id === product.id);
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
         cart.push({ ...product, quantity: 1 });
       }
-
       localStorage.setItem('cart', JSON.stringify(cart));
-      alert("Product added to cart!");
+      window.location.href = "../cart.html"; 
     };
   }
 }
 
-// Error handling
 function handleError(error) {
   console.error("Error loading products:", error);
 }

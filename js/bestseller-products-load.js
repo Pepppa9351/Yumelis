@@ -17,7 +17,7 @@ function handleResponse(response) {
 
 // Adds each product to the page
 function displayProducts(products) {
-  const productList = document.getElementById('product-list');
+  const productList = document.getElementById('bs-product-list');
 
   // Go through each product in the array
   for (let i = 0; i < products.length; i++) {
@@ -26,13 +26,14 @@ function displayProducts(products) {
     // Create an <a> element instead of a div to make the whole card clickable
     const productLink = document.createElement('a');
     productLink.href = `product.html?id=${product.id}`;  // Pass product id in URL query
-    productLink.className = 'product-card';
+    productLink.className = 'bs-product-card';
 
     // Set the inside HTML of the card
     productLink.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <p class="product-name">${product.name}</p>
-      <p class="product-price">${product.price} Kč</p>
+      <img src="${product.image}" alt="${product.name}" class="bs-product-image" />
+      <p class="bs-product-brand">${product.brand}</p>
+      <p class="bs-product-name">${product.name}</p>
+      <p class="bs-product-price">${product.price} Kč</p>
     `;
 
     // Add this product link card to the product list on the page

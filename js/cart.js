@@ -5,40 +5,66 @@ document.addEventListener("DOMContentLoaded", () => {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    totalPriceElement.textContent = "Košík je prázdný.";
     return;
   }
 
-  let total = 0;
+  function renderCart() {
+    cartItemsContainer.innerHTML = "";
+    let total = 0;
 
-  cart.forEach((item, index) => {
-    const itemDiv = document.createElement("div");
-    itemDiv.className = "cart-item";
+    cart.forEach((item, index) => {
+      const quantity = `${item.quantity} x`;
 
-    itemDiv.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="cart-image">
-      <div class="cart-details">
-        <p><strong>${item.name}</strong></p>
-        <p>Price: ${item.price} Kč</p>
-        <p>Quantity: ${item.quantity}</p>
-        <button class="remove-btn" data-index="${index}">Remove</button>
-      </div>
-    `;
+      const itemDiv = document.createElement("div");
+      itemDiv.className = "cart-item";
 
-    cartItemsContainer.appendChild(itemDiv);
+      itemDiv.innerHTML = `
+        <p><strong>${quantity}</strong></p>
+        <img src="${item.image}" alt="${item.name}" class="cart-image" />
+        <div class="cart-details">
+          <p><strong>${item.name}</strong></p>
+          <div class="cart-right">
+            <p class="cart-price">${item.price} Kč</p>
+            <button class="decrease-btn" data-index="${index}">-</button>
+            <button class="increase-btn" data-index="${index}">+</button>
+          </div>
+        </div>
+      `;
 
-    total += item.price * item.quantity;
-  });
+      cartItemsContainer.appendChild(itemDiv);
 
-  totalPriceElement.textContent = `${total} Kč`;
-
-  // Remove button 
-  document.querySelectorAll(".remove-btn").forEach(button => {
-    button.addEventListener("click", (e) => {
-      const index = e.target.dataset.index;
-      cart.splice(index, 1);
-      localStorage.setItem("cart", JSON.stringify(cart));
-      location.reload();
+      total += item.price * item.quantity;
     });
-  });
+
+    totalPriceElement.textContent = `Celkem: ${total} Kč`;
+
+    // Add button events
+    document.querySelectorAll(".increase-btn").forEach(button => {
+      button.addEventListener("click", (e) => {
+        const index = e.target.dataset.index;
+        cart[index].quantity++;
+        saveAndRender();
+      });
+    });
+
+    document.querySelectorAll(".decrease-btn").forEach(button => {
+      button.addEventListener("click", (e) => {
+        const index = e.target.dataset.index;
+        if (cart[index].quantity > 1) {
+          cart[index].quantity--;
+        } else {
+          cart.splice(index, 1); // remove item if quantity = 0
+        }
+        saveAndRender();
+      });
+    });
+  }
+
+  function saveAndRender() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+  }
+
+  renderCart();
 });

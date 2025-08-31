@@ -1,47 +1,50 @@
 [
   {
     "id": "althair",
-    "name": "Parfums De Marly – Althair",
+    "brand": "Parfums De Marly",
+    "name": "Althair",
     "price": 5390,
-    "image": "/Yumelis/images/althair.png",
+    "image": "/../images/althair.png",
     "category": "parfemy"
   },
   {
     "id": "set-na-rande",
+    "brand": "",
     "name": "Pánský set vzorků na rande",
     "price": 400,
-    "image": "/Yumelis/images/set-na-rande.png",
+    "image": "/../images/set-na-rande.png",
     "category": "darkove-sety"
   },
   {
     "id": "dark-vanilla",
-    "name": "Montale – Dark Vanilla",
+    "brand": "Montale",
+    "name": "Dark Vanilla",
     "price": 2190,
-    "image": "/Yumelis/images/dark-vanilla.png",
+    "image": "/../images/dark-vanilla.png",
     "category": "parfemy"
   },
   {
     "id": "layton",
-    "name": "Parfums De Marly – Layton",
+    "brand": "Parfums De Marly",
+    "name": "Layton",
     "price": 2190,
-    "image": "/Yumelis/images/layton.png",
+    "image": "/../images/layton.png",
     "category": "parfemy"
   },
   {
     "id": "cestovni-lahvicka",
+    "brand": "",
     "name": "Cestovní lahvička na parfémy",
     "price": 90,
-    "image": "/Yumelis/images/doplnky.png",
+    "image": "/../images/doplnky.png",
     "category": "doplnky"
   },
   {
     "id": "layton-vzorek",
-    "name": "Vzorek 5 ml: Parfums De Marly – Layton",
+    "brand": "Parfums De Marly",
+    "name": "Vzorek 5 ml: Layton",
     "price": 190,
-    "image": "/Yumelis/images/sample.png",
+    "image": "/../images/sample.png",
     "category": "vzorky"
   }
-
-
-
 ]
