@@ -4,7 +4,7 @@
     "brand": "Parfums De Marly",
     "name": "Althair",
     "price": 5390,
-    "image": "../images/althair.png",
+    "image": "/images/althair.png",
     "category": "parfemy"
   },
   {
@@ -12,7 +12,7 @@
     "brand": "",
     "name": "Pánský set vzorků na rande",
     "price": 400,
-    "image": "../images/set-na-rande.png",
+    "image": "/images/set-na-rande.png",
     "category": "darkove-sety"
   },
   {
@@ -20,7 +20,7 @@
     "brand": "Montale",
     "name": "Dark Vanilla",
     "price": 2190,
-    "image": "../images/dark-vanilla.png",
+    "image": "/images/dark-vanilla.png",
     "category": "parfemy"
   }
 ]
