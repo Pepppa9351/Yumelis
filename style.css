@@ -542,6 +542,14 @@ html {
   background-color: transparent;
   flex-shrink: 0;
   }
+
+.increase-btn,
+.decrease-btn {
+  width: 4rem;
+  height: 4rem;
+  color: #111;
+  font-size: 3rem;
+}
 }
 
 
@@ -550,7 +558,7 @@ html {
 ========================= */
 
 .pp-product-section {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 4rem 6rem;
 }
 
@@ -615,8 +623,12 @@ html {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .pp-product-row {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pp-product-section {
+  margin-top: 3rem;
   }
 }
