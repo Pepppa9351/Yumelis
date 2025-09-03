@@ -22,6 +22,10 @@ html {
   font-size: 7px; /* default, good for mobile-first */
 }
 
+@media (min-width: 320px) {
+  html { font-size: 6px; } /* small phones */
+}
+
 @media (min-width: 480px) {
   html { font-size: 8px; } /* small phones */
 }
@@ -422,14 +426,14 @@ html {
   9. Cart Section
 ========================= */
 .cart-section {
-    margin-top: 80px;
+    margin-top: 6rem;
 }
 .cart-item {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 0.7rem 1rem;
   border-bottom: 1px solid #ddd;
-  gap: 25px;
+  gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
@@ -501,9 +505,9 @@ html {
 /* Total box */
 .cart-total-box {
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 1.5rem auto;
   background-color: #f5f5f5;
-  padding: 20px 40px;
+  padding: 1.5rem 2.5rem;
   border-radius: 8px;
   text-align: right;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -519,8 +523,8 @@ html {
 .cart-heading {
   text-align: center;
   font-weight: lighter;
-  font-size: 40px;
-  margin-bottom: 25px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: #111;
 }
 
@@ -530,39 +534,23 @@ html {
 }
 
 @media (max-width: 500px) {
-  .cart-item {
-    padding: 20px 10px;
-    gap: 18px;
-  }
   .cart-image {
-    width: 100px;
-    height: 100px;
-  }
-  .cart-details p:first-child {
-    font-size: 1.3rem;
-  }
-  .cart-price {
-    font-size: 1.3rem;
-  }
-  .increase-btn,
-  .decrease-btn {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.5rem;
-  }
-  .cart-total-box {
-    padding: 30px 15px;
-  }
-  .cart-total-box h2 {
-    font-size: 1.7rem;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: transparent;
+  flex-shrink: 0;
   }
 }
+
 
 /* =========================
   10. Product pages
 ========================= */
 
 .pp-product-section {
+  margin-top: 3rem;
   padding: 4rem 6rem;
 }
 
@@ -570,7 +558,6 @@ html {
   font-weight: lighter;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  
 }
 
 .pp-product-row {
