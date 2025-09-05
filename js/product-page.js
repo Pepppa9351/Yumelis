@@ -4,7 +4,7 @@ function OnLoad() {
   const params = new URLSearchParams(window.location.search);
   const productId = params.get('id');
 
-  fetch("data/products.json")
+  fetch("/Yumelis/data/products.json")
     .then(response => response.json())
     .then(products => {
       const product = products.find(p => p.id === productId);
