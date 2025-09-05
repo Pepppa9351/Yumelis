@@ -44,7 +44,7 @@ function createButton(product) {
         cart.push({ ...product, quantity: 1 });
       }
       localStorage.setItem('cart', JSON.stringify(cart));
-      window.location.href = "/Yumelis/cart.html"; 
+      window.location.href= "/Yumelis/cart/"; 
     };
   }
 }
