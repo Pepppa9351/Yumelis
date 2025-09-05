@@ -25,7 +25,7 @@ function displayProducts(products) {
 
     // Create an <a> element instead of a div to make the whole card clickable
     const productLink = document.createElement('a');
-    productLink.href= `/Yumelis/product?id=${product.id}`;  // Pass product id in URL query
+    productLink.href= `/Yumelis/product/?id=${product.id}`;  // Pass product id in URL query
     productLink.className = 'bs-product-card';
 
     // Set the inside HTML of the card
