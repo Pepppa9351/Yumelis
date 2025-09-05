@@ -46,5 +46,53 @@
     "price": 190,
     "image": "/Yumelis/images/sample.png",
     "category": "vzorky"
+  },
+  {
+    "id": "ether",
+    "brand": "Xerjoff",
+    "name": "Ether",
+    "price": 0,
+    "image": "/Yumelis/images/ether.png",
+    "category": "parfemy"
+  },
+  {
+    "id": "redtobacco",
+    "brand": "Mancera",
+    "name": "Red Tobacco",
+    "price": 0,
+    "image": "/Yumelis/images/redtobacco.png",
+    "category": "parfemy"
+  },
+  {
+    "id": "rosesvanille",
+    "brand": "Mancera",
+    "name": "Roses Vanille",
+    "price": 0,
+    "image": "/Yumelis/images/rosesvanille.png",
+    "category": "parfemy"
+  },
+  {
+    "id": "cedratboise",
+    "brand": "Mancera",
+    "name": "Cedrat Boise",
+    "price": 0,
+    "image": "/Yumelis/images/cedratboise.png",
+    "category": "parfemy"
+  },
+  {
+    "id": "opera",
+    "brand": "Xerjoff",
+    "name": "Opera",
+    "price": 0,
+    "image": "/Yumelis/images/opera.png",
+    "category": "parfemy"
+  },
+  {
+    "id": "renaissance",
+    "brand": "Xerjoff",
+    "name": "Renaissance",
+    "price": 0,
+    "image": "/Yumelis/images/renaissance.png",
+    "category": "parfemy"
   }
 ]
