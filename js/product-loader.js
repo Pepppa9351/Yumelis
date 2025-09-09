@@ -22,7 +22,7 @@ function displayProducts(products) {
     const product = products[i];
 
     const productLink = document.createElement("a");
-    productLink.href= `/Yumelis/product/?id=${product.id}{prodcut.content}`;
+    productLink.href= `/Yumelis/product/?id=${product.id}{product.content}`;
     productLink.className = "pp-product-card";
 
     productLink.innerHTML = `
