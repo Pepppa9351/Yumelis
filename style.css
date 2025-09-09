@@ -623,6 +623,10 @@ html {
   text-align: center;
 }
 
+.pp-message{
+  font-size: 1.5rem
+}
+
 @media (max-width: 500px) {
   .pp-product-row {
     grid-template-columns: repeat(2, 1fr);
